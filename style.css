@@ -1,0 +1,174 @@
+h1, h2, h3, h4, h5, h6, p, li, a{
+    font-family: "Montserrat", sans-serif;
+    color: #404040;
+}
+
+h1{
+    font-size: 35px;
+    font-weight: 600;
+}
+
+h2{
+    font-size: 35px;
+    font-weight: 400;
+}
+
+p{
+    font-size: 16px;
+}
+
+strong{
+    font-weight: 600;
+}
+
+a.botao{
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.realce-semi-bold{
+    font-weight: 600;
+}
+
+/* SEÇÃO CABEÇALHO */
+
+li.item-lista-cabecalho a{
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #112e61;
+}
+
+/* SEÇÃO HERO */
+
+p.hero-paragrafo{
+    font-size: 19px;
+}
+
+/* SEÇÃO CONTEÚDOS GRATUITOS */
+
+/* h2.gratuito-h2{
+    font-size: 35px;
+    font-weight: 400;      GLOBAL
+    text-align: left;
+    
+} */
+
+span.gratuito-realce{
+    font-weight: 600;
+    color: #7a40be;
+}
+
+h3.gratuito-h3{
+    font-size: 23px;
+    font-weight: 700;
+}
+
+a.gratuito-link-lista{
+    font-size: 19px;
+    text-decoration: none;
+}
+
+/* SEÇÃO DIFERENCIAIS */
+
+/* h2.diferenciais-h2{
+    font-size: 35px;         GLOBAL
+    font-weight: 400;
+} */
+
+/* h2.diferenciais-h2 strong{
+    font-weight: 600;
+} */
+
+p.diferenciais-p{
+    font-size: 19px;
+}
+
+h3.diferencias-h3{
+    font-size: 24px;
+    font-weight: 600;
+    color: #005e88;
+}
+
+.diferenciais-h3-empresas{
+    font-size: 35px;
+    font-weight: 400;
+}
+
+.diferenciais-h3-empresas a{
+    color: #005e88;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+/* SEÇÃO O QUE FALAM */
+
+/* span.oquefalam-realce{
+    font-weight: 600;
+} */
+
+/* SEÇÃO BLOG DA HASTAG */
+
+p.blog-postadoem {
+    font-size: 15px;
+}
+
+p.blog-postadoem a{
+    font-weight: 600;
+    text-decoration: none;
+    color: #f7a70c;
+}
+
+a.titulo-post{
+    font-size: 24px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+p.descricao-post{
+    font-size: 17px;
+}
+
+/* SEÇÃO COMO AJUDAR */
+
+/* span.como-ajudar-realce{
+    font-weight: 600;
+} */
+
+ul.como-ajudar-lista, .como-ajudar-paragrafo{
+    font-size: 19px;
+}
+
+ul.como-ajudar-lista a, p.como-ajudar-paragrafo a{
+    font-weight: 600;
+    color: #008ff7;
+}
+
+/* p.como-ajudar-paragrafo b{
+    font-weight: 600;
+} */
+
+/* SEÇÃO MINICURSO */
+
+/* SEÇÃO RODAPÉ */
+
+p.rodape-titulo{
+    font-size: 22px;
+    font-weight: 600;
+}
+
+p.rodape-subtitulo{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+p.rodape-suporte{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+a.rodape-link{
+    color: #1a77a4;
+}
