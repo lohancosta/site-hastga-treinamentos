@@ -1,28 +1,55 @@
-h1, h2, h3, h4, h5, h6, p, li, a{
+/* Sistema de Tamanhos - https://typescale.com/ 
+
+Fontes - Minor Third - 1.200 - Em PX
+4.4 - 5.4 - 6.4 - 7.7 - 9.2 - 11.1 - 13.3 - <diminui(16)aumenta> - 19.2 - 23 - 27.6 - 33.2 - 39.8 - 47.8 - 57.3 - 68.8 - 82.6
+
+Espaçamentos - Major Third - 1.250 - Em PX
+2.1 - 2.7 - 3.3 - 4.2 - 5.2 - 6.5 - 8.2 - 10.2 - 12.8 - <diminui(16)aumenta> - 20 - 25 - 31.2 - 39 - 48.8 - 61 - 76.3 - 95.4 - 119.2
+
+*/
+
+
+*{
+    padding: 0;
+    margin: 0;                             /*seletor universal: espaçamento e box-model*/
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;                      /*dimensões e unidades, usamos porcentagem, vamos utilizar rem. 62.5 = 10px = 1rem*/
+}
+
+body{
     font-family: "Montserrat", sans-serif;
     color: #404040;
+    font-size: 1.6rem;                         /*herança de estilos. fonte, cor, (tamanho da fonte e altura da linha) é proporcional*/
+    line-height: 1.4rem;
 }
 
 h1{
-    font-size: 35px;
+    font-size: 3.5rem;
     font-weight: 600;
 }
 
 h2{
-    font-size: 35px;
+    font-size: 3.5rem;
     font-weight: 400;
-}
-
-p{
-    font-size: 16px;
 }
 
 strong{
     font-weight: 600;
 }
 
+/* a:link, a:visited{
+    
+} */
+
+/* a:hover, a:active{
+    color: #ff6600;
+} */
+
 a.botao{
-    font-size: 24px;
+    font-size: 2.4rem;
     font-weight: 700;
     text-decoration: none;
 }
@@ -33,28 +60,54 @@ a.botao{
 
 /* SEÇÃO CABEÇALHO */
 
-li.item-lista-cabecalho a{
-    font-size: 14px;
+.cabecalho{
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: white;
+    padding: 1.6rem 3.12rem;
+    box-shadow: 0 0.21rem 0.4rem rgba(0, 0, 0, 0.1);
+}
+
+/* Temporário, não aparecer links cabeçalho */
+nav{
+    display: none;
+}
+
+nav ul{
+    list-style: none;
+}
+
+.item-lista-cabecalho a{
+    font-size: 1.4rem;
     font-weight: 600;
     text-transform: uppercase;
     text-decoration: none;
     color: #112e61;
 }
 
+.item-lista-cabecalho a:hover, .item-lista-cabecalho a:active{
+    color: #ff6600;
+}
+
+.item-lista-cabecalho.contem-filhos::after{
+    content: "\2bc6";
+}
+
 /* SEÇÃO HERO */
 
 p.hero-paragrafo{
-    font-size: 19px;
+    font-size: 1.9rem;
+}
+
+.img-hero{
+    background-image: url(https://www.hashtagtreinamentos.com/wp-content/uploads/2022/06/BACKGROUN-banner-01.png);
+    background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /* SEÇÃO CONTEÚDOS GRATUITOS */
-
-/* h2.gratuito-h2{
-    font-size: 35px;
-    font-weight: 400;      GLOBAL
-    text-align: left;
-    
-} */
 
 span.gratuito-realce{
     font-weight: 600;
@@ -62,38 +115,29 @@ span.gratuito-realce{
 }
 
 h3.gratuito-h3{
-    font-size: 23px;
+    font-size: 2.3rem;
     font-weight: 700;
 }
 
 a.gratuito-link-lista{
-    font-size: 19px;
+    font-size: 1.9rem;
     text-decoration: none;
 }
 
 /* SEÇÃO DIFERENCIAIS */
 
-/* h2.diferenciais-h2{
-    font-size: 35px;         GLOBAL
-    font-weight: 400;
-} */
-
-/* h2.diferenciais-h2 strong{
-    font-weight: 600;
-} */
-
 p.diferenciais-p{
-    font-size: 19px;
+    font-size: 1.9rem;
 }
 
 h3.diferencias-h3{
-    font-size: 24px;
+    font-size: 2.4rem;
     font-weight: 600;
     color: #005e88;
 }
 
 .diferenciais-h3-empresas{
-    font-size: 35px;
+    font-size: 3.5rem;
     font-weight: 400;
 }
 
@@ -105,14 +149,10 @@ h3.diferencias-h3{
 
 /* SEÇÃO O QUE FALAM */
 
-/* span.oquefalam-realce{
-    font-weight: 600;
-} */
-
 /* SEÇÃO BLOG DA HASTAG */
 
 p.blog-postadoem {
-    font-size: 15px;
+    font-size: 1.5rem;
 }
 
 p.blog-postadoem a{
@@ -122,23 +162,19 @@ p.blog-postadoem a{
 }
 
 a.titulo-post{
-    font-size: 24px;
+    font-size: 2.4rem;
     font-weight: 600;
     text-decoration: none;
 }
 
 p.descricao-post{
-    font-size: 17px;
+    font-size: 1.7rem;
 }
 
 /* SEÇÃO COMO AJUDAR */
 
-/* span.como-ajudar-realce{
-    font-weight: 600;
-} */
-
 ul.como-ajudar-lista, .como-ajudar-paragrafo{
-    font-size: 19px;
+    font-size: 1.9rem;
 }
 
 ul.como-ajudar-lista a, p.como-ajudar-paragrafo a{
@@ -146,26 +182,22 @@ ul.como-ajudar-lista a, p.como-ajudar-paragrafo a{
     color: #008ff7;
 }
 
-/* p.como-ajudar-paragrafo b{
-    font-weight: 600;
-} */
-
 /* SEÇÃO MINICURSO */
 
 /* SEÇÃO RODAPÉ */
 
 p.rodape-titulo{
-    font-size: 22px;
+    font-size: 2.2rem;
     font-weight: 600;
 }
 
 p.rodape-subtitulo{
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: 500;
 }
 
 p.rodape-suporte{
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 500;
 }
 
