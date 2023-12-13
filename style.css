@@ -33,12 +33,17 @@ h1{
 }
 
 h2{
-    font-size: 3.5rem;
+    font-size: 2.76rem;
+    line-height: 1.1rem;
     font-weight: 400;
 }
 
 strong{
     font-weight: 600;
+}
+
+ul{
+    list-style: none;
 }
 
 .secao{
@@ -81,10 +86,6 @@ strong{
 /* Temporário, não aparecer links cabeçalho */
 nav{
     display: none;
-}
-
-nav ul{
-    list-style: none;
 }
 
 .item-lista-cabecalho a{
@@ -141,25 +142,86 @@ nav ul{
 
 /* SEÇÃO CONTEÚDOS GRATUITOS */
 
-span.gratuito-realce{
+.secao-conteudo{
+    background-image: url(https://www.hashtagtreinamentos.com/wp-content/uploads/2022/06/BACKGROUN-banner-02.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.caixa-cursos-hastag{
+    position: relative;
+    box-shadow: inset 0 0 0.8rem 0.1rem rgba(0,0,0,.1);
+    border-radius: 2rem;
+    padding: 2rem;
+}
+
+
+.caixa-gratuito-h3{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    display: inline-block;
+    padding: 0.42rem 1.6rem;
+    background-image: linear-gradient(90deg, #aa56a6, #6d42b9);
+    color: white;
+    border-radius: 1rem;
+    transform: rotate(-3deg) translate(-50%, -50%); /* inclinando o elemento em -10 graus e posicionando ao meio.*/
+    box-shadow: 0 0.2rem 0.4rem rgba(0,0,0,.1);
+}
+
+.circulo-logo-curos{
+    display: inline-block;
+    background-color: #e7e7e7;
+    border-radius: 50%;
+    box-shadow: inset 0 0 0.4rem 0.2rem rgba(0,0,0,.1);
+    padding: 1.02rem;
+    width: 4.5rem;
+    height: 4.5rem;
+}
+
+.circulo-logo-curos img{
+    width: 100%;
+}
+
+.img-conteudos{
+    width: 44rem;
+}
+
+.gratuito-realce{
     font-weight: 600;
     color: #7a40be;
 }
 
-h3.gratuito-h3{
+.gratuito-h3{
     font-size: 2.3rem;
     font-weight: 700;
 }
 
-a.gratuito-link-lista{
-    font-size: 1.9rem;
+.gratuito-link-lista:link, .gratuito-link-lista:visited{
+    display: inline-block;
+    padding: 0.42rem 3.12rem;
+    background-color: #e7e7e7;
+    border-radius: 2.5rem;
+    box-shadow: inset 0 0 0.4rem 0.2rem rgba(0,0,0,.1);
+    font-size: 1.92rem;
     text-decoration: none;
+    color: inherit;
+}
+
+.gratuito-link-lista:hover, .gratuito-link-lista:active{
+    text-decoration: underline;
+}
+
+.gratuito-link-lista img{
+    width: 1.8rem;
 }
 
 /* SEÇÃO DIFERENCIAIS */
 
-p.diferenciais-p{
-    font-size: 1.9rem;
+.diferenciais-p{
+    font-size: 1.92rem;
 }
 
 h3.diferencias-h3{
@@ -206,7 +268,7 @@ p.descricao-post{
 /* SEÇÃO COMO AJUDAR */
 
 ul.como-ajudar-lista, .como-ajudar-paragrafo{
-    font-size: 1.9rem;
+    font-size: 1.92rem;
 }
 
 ul.como-ajudar-lista a, p.como-ajudar-paragrafo a{
