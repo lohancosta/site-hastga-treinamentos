@@ -38,7 +38,7 @@ h2{
     font-weight: 400;
 }
 
-h3{
+h3, .titulo-post{
     font-size: 2.3rem;
     line-height: 1.2;
 }
@@ -58,6 +58,12 @@ ul{
 .container{
     max-width: 100rem;
     margin: 0 auto;
+}
+
+
+.container-diferenciais, .container-blog{
+    border-radius: 5rem;
+    box-shadow: inset 0 0 0.8rem 0.3rem rgba(0,0,0,.1);
 }
 
 .botao{
@@ -80,6 +86,19 @@ ul{
 .hero-paragrafo, .como-ajudar-lista, .como-ajudar-paragrafo, .diferenciais-p{
     font-size: 1.92rem;
     line-height: 1.3;
+}
+
+.caixa-gratuito-h3, .caixa-blog-h2{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    display: inline-block;
+    padding: 0.42rem 1.6rem;
+    
+    color: white;
+    border-radius: 1rem;
+    transform: rotate(-3deg) translate(-50%, -50%); /* inclinando o elemento em -10 graus e posicionando ao meio.*/
+    box-shadow: 0 0.2rem 0.4rem rgba(0,0,0,.1);
 }
 
 
@@ -164,16 +183,7 @@ nav{
 
 
 .caixa-gratuito-h3{
-    position: absolute;
-    top: 0;
-    left: 50%;
-    display: inline-block;
-    padding: 0.42rem 1.6rem;
     background-image: linear-gradient(90deg, #aa56a6, #6d42b9);
-    color: white;
-    border-radius: 1rem;
-    transform: rotate(-3deg) translate(-50%, -50%); /* inclinando o elemento em -10 graus e posicionando ao meio.*/
-    box-shadow: 0 0.2rem 0.4rem rgba(0,0,0,.1);
 }
 
 .circulo-logo-curos{
@@ -230,9 +240,19 @@ nav{
 }
 
 .container-diferenciais{
-    border-radius: 5rem;
     background-color: white;
-    box-shadow: inset 0 0 0.8rem 0.3rem rgba(0,0,0,.1);
+}
+
+.caixa-titulo-diferenciais{
+    border-top-left-radius: 5rem;
+    border-top-right-radius: 5rem;
+    padding: 4.88rem;
+    background-image: linear-gradient(225deg, #196b9f, #1a82a7);
+    color: white;
+}
+
+.caixa-restante-diferenciais{
+    padding: 4.88rem;
 }
 
 .caixa-itens-diferenciais{
@@ -272,18 +292,6 @@ nav{
 
 .logo-subsea, .logo-animale{
     opacity: 75%;
-}
-
-.caixa-titulo-diferenciais{
-    border-top-left-radius: 5rem;
-    border-top-right-radius: 5rem;
-    padding: 4.88rem;
-    background-image: linear-gradient(225deg, #196b9f, #1a82a7);
-    color: white;
-}
-
-.caixa-restante-diferenciais{
-    padding: 4.88rem;
 }
 
 .caixa-diferenciais-h2{
@@ -415,8 +423,36 @@ nav{
 
 /* SEÇÃO BLOG DA HASTAG */
 
+.secao-blog{
+    background-color: #f4f5f7;
+}
+
+.container-blog{
+    position: relative;
+    background-color: #f9f9f9;
+    padding: 4.88rem;
+}
+
+.caixa-blog-h2{
+    padding: 1.02rem 3.12rem;
+    background-image: linear-gradient(90deg,#feb914,#f6a50b);
+}
+
+.caixa-post-blog{
+    display: inline-block;
+    border-radius: 2.5rem;
+    box-shadow: inset 0 0 0.4rem 0.5rem rgba(0,0,0,.1);
+    padding: 2rem;
+    width: 49%;
+}
+
+.caixa-post-blog img{
+    width: 100%;
+}
+
 .blog-postadoem {
-    font-size: 1.5rem;
+    font-size: 1.33rem;
+    line-height: 1.5;
 }
 
 .blog-postadoem a{
@@ -426,13 +462,8 @@ nav{
 }
 
 .titulo-post{
-    font-size: 2.4rem;
     font-weight: 600;
     text-decoration: none;
-}
-
-.descricao-post{
-    font-size: 1.7rem;
 }
 
 /* SEÇÃO COMO AJUDAR */
