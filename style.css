@@ -24,6 +24,7 @@ body{
     color: #404040;
     font-size: 1.6rem;                         /*herança de estilos. fonte, cor, (tamanho da fonte e altura da linha) é proporcional*/
     line-height: 1.4;
+    background-color: #f4f5f7;
 }
 
 h1{
@@ -94,7 +95,6 @@ ul{
     left: 50%;
     display: inline-block;
     padding: 0.42rem 1.6rem;
-    
     color: white;
     border-radius: 1rem;
     transform: rotate(-3deg) translate(-50%, -50%); /* inclinando o elemento em -10 graus e posicionando ao meio.*/
@@ -234,10 +234,6 @@ nav{
 }
 
 /* SEÇÃO DIFERENCIAIS */
-
-.secao-diferenciais{
-    background-color: #f4f5f7;
-}
 
 .container-diferenciais{
     background-color: white;
@@ -423,10 +419,6 @@ nav{
 
 /* SEÇÃO BLOG DA HASTAG */
 
-.secao-blog{
-    background-color: #f4f5f7;
-}
-
 .container-blog{
     position: relative;
     background-color: #f9f9f9;
@@ -444,6 +436,7 @@ nav{
     box-shadow: inset 0 0 0.4rem 0.5rem rgba(0,0,0,.1);
     padding: 2rem;
     width: 49%;
+    background-color: #fff;
 }
 
 .caixa-post-blog img{
@@ -468,9 +461,45 @@ nav{
 
 /* SEÇÃO COMO AJUDAR */
 
-.como-ajudar-lista a, p.como-ajudar-paragrafo a{
-    font-weight: 600;
+.secao-comoajudar{
+    padding: 0;
+}
+
+.secao-secundaria-laranja{
+    background-image: url(https://www.hashtagtreinamentos.com/wp-content/uploads/2022/06/BACKGROUND-banner-07.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.secao-secundaria-laranja, .secao-secundaria-cinza{
+    padding: 7.63rem 2rem;
+}
+
+.caixa-comoajudar-h2{
+    display: inline-block;
+    padding: 0.42rem 1.6rem;
+    color: white;
+    border-radius: 1rem;
+    box-shadow: 0 0.2rem 0.4rem rgba(0,0,0,.1);
+    background-image: linear-gradient(90deg,#14a1d5,#1a8ad4);
+}
+
+.como-ajudar-lista{
+    border-radius: 2.5rem;
+    box-shadow: inset 0 0 0.8rem 0.5rem rgba(0,0,0,.1);
+    padding: 2.5rem;
+    background-color: #f9f9f9;
+}
+
+
+.como-ajudar-lista a:link, .como-ajudar-lista a:visited, .como-ajudar-paragrafo a:link, .como-ajudar-paragrafo a:visited{
     color: #008ff7;
+    font-weight: 600;
+}
+
+.como-ajudar-lista a:hover, .como-ajudar-lista a:active, .como-ajudar-paragrafo a:hover, .como-ajudar-paragrafo a:active{
+    color: #0056b3;
 }
 
 /* SEÇÃO MINICURSO */
