@@ -23,7 +23,7 @@ body{
     font-family: "Montserrat", sans-serif;
     color: #404040;
     font-size: 1.6rem;                         /*herança de estilos. fonte, cor, (tamanho da fonte e altura da linha) é proporcional*/
-    line-height: 1.4rem;
+    line-height: 1.4;
 }
 
 h1{
@@ -34,8 +34,13 @@ h1{
 
 h2{
     font-size: 2.76rem;
-    line-height: 1.1rem;
+    line-height: 1.1;
     font-weight: 400;
+}
+
+h3{
+    font-size: 2.3rem;
+    line-height: 1.2;
 }
 
 strong{
@@ -69,12 +74,17 @@ ul{
     font-weight: 600;
 }
 
+.hero-paragrafo, .como-ajudar-lista, .como-ajudar-paragrafo, .diferenciais-p{
+    font-size: 1.92rem;
+    line-height: 1.3;
+}
 
 
 /* SEÇÃO CABEÇALHO */
 
 .cabecalho{
     position: sticky;
+    z-index: 9999;
     top: 0;
     left: 0;
     background-color: white;
@@ -125,11 +135,6 @@ nav{
     background-image: none;
     border-bottom: solid 0.4rem #ff9253;
     border-right: solid 0.4rem #ff9253;
-}
-
-.hero-paragrafo{
-    font-size: 1.92rem;
-    line-height: 1.3;
 }
 
 .iframe-video{
@@ -195,7 +200,6 @@ nav{
 }
 
 .gratuito-h3{
-    font-size: 2.3rem;
     font-weight: 700;
 }
 
@@ -206,6 +210,7 @@ nav{
     border-radius: 2.5rem;
     box-shadow: inset 0 0 0.4rem 0.2rem rgba(0,0,0,.1);
     font-size: 1.92rem;
+    line-height: 1.3;
     text-decoration: none;
     color: inherit;
 }
@@ -220,18 +225,78 @@ nav{
 
 /* SEÇÃO DIFERENCIAIS */
 
-.diferenciais-p{
-    font-size: 1.92rem;
+.secao-diferenciais{
+    background-color: #f4f5f7;
 }
 
-h3.diferencias-h3{
-    font-size: 2.4rem;
-    font-weight: 600;
+.container-diferenciais{
+    border-radius: 5rem;
+    background-color: white;
+    box-shadow: inset 0 0 0.8rem 0.3rem rgba(0,0,0,.1);
+}
+
+.caixa-itens-diferenciais{
+    position: relative;
+    border-radius: 2.5rem;
+    background-color: white;
+    box-shadow: 0 0 0.4rem 0.2rem rgba(0,0,0,.1);
+    padding: 3.12rem 2.5rem;
+}
+
+.caixa-imagem-diferenciais{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    border-radius: 1.5rem;
+    background-color: #ffaf00;
+    width: 10rem;
+    height: 10rem;
+    padding: 1.6rem;
+    box-shadow: inset 0 0 0.4rem 0.2rem rgba(0,0,0,.1);
+}
+
+.caixa-imagem-diferenciais img{
+    width: 100%;
+}
+
+.diferenciais-empresas img{
+    height: 5rem;
+    filter: grayscale(100%);
+}
+
+.logo-loreal{
+    opacity: 60%;
+}
+
+.logo-subsea, .logo-disney{
+    opacity: 75%;
+}
+
+.caixa-titulo-diferenciais{
+    border-top-left-radius: 5rem;
+    border-top-right-radius: 5rem;
+    padding: 4.88rem;
+    background-image: linear-gradient(225deg, #196b9f, #1a82a7);
+    color: white;
+}
+
+.caixa-restante-diferenciais{
+    padding: 4.88rem;
+}
+
+.caixa-diferenciais-h2{
+    border-left: solid 0.5rem #ffb20f;
+    padding: 0.52rem 0 0.52rem 1.6rem;
+}
+
+.diferencias-h3{
     color: #005e88;
+    font-weight: 600;
 }
 
 .diferenciais-h3-empresas{
-    font-size: 3.5rem;
     font-weight: 400;
 }
 
@@ -245,33 +310,29 @@ h3.diferencias-h3{
 
 /* SEÇÃO BLOG DA HASTAG */
 
-p.blog-postadoem {
+.blog-postadoem {
     font-size: 1.5rem;
 }
 
-p.blog-postadoem a{
+.blog-postadoem a{
     font-weight: 600;
     text-decoration: none;
     color: #f7a70c;
 }
 
-a.titulo-post{
+.titulo-post{
     font-size: 2.4rem;
     font-weight: 600;
     text-decoration: none;
 }
 
-p.descricao-post{
+.descricao-post{
     font-size: 1.7rem;
 }
 
 /* SEÇÃO COMO AJUDAR */
 
-ul.como-ajudar-lista, .como-ajudar-paragrafo{
-    font-size: 1.92rem;
-}
-
-ul.como-ajudar-lista a, p.como-ajudar-paragrafo a{
+.como-ajudar-lista a, p.como-ajudar-paragrafo a{
     font-weight: 600;
     color: #008ff7;
 }
