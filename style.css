@@ -52,6 +52,26 @@ ul{
     list-style: none;
 }
 
+input{
+    padding: 1.02rem;
+    background-color: white;
+    border: 0;
+    box-shadow: inset 0 0 0.2rem 0.2rem rgba(0, 0, 0, 0.151);
+    border-radius: 0.8rem;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    color: #404040;
+}
+
+input:focus{
+    outline: none;
+}
+
+input::placeholder{
+   color: #757575;
+}
+
 .secao{
     padding: 7.63rem 2rem;
 }
@@ -76,6 +96,7 @@ ul{
     padding: 0.65rem 2.5rem;
     color: white;
     box-shadow: 3px 3px 8px -2px rgba(0,0,0,.3);
+    border: 0;
     border-bottom: solid 0.4rem #993c38;
     border-right: solid 0.4rem #993c38;
 }
@@ -503,6 +524,23 @@ nav{
 }
 
 /* SEÇÃO MINICURSO */
+
+.secao-minicurso{
+    background-image: linear-gradient(90deg, #9e4ad7, #713db6);
+    color: white;
+}
+
+.botao-minicurso{
+    background-color: #ffba29;
+    border-bottom-color: #664a10;
+    border-right-color: #664a10;
+}
+
+.botao-minicurso:hover{
+    border-bottom-color: #ffba29;
+    border-right-color: #ffba29;
+}
+
 
 /* SEÇÃO RODAPÉ */
 
