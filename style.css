@@ -544,21 +544,43 @@ nav{
 
 /* SEÇÃO RODAPÉ */
 
-p.rodape-titulo{
+.rodape-titulo{
     font-size: 2.2rem;
     font-weight: 600;
 }
 
-p.rodape-subtitulo{
+.rodape-subtitulo{
     font-size: 2rem;
     font-weight: 500;
 }
 
-p.rodape-suporte{
+.rodape-suporte{
     font-size: 1.8rem;
     font-weight: 500;
 }
 
-a.rodape-link{
+.rodape-link{
     color: #1a77a4;
+}
+
+.caixa-newsletter{
+    display: inline-block;
+    border-radius: 2.5rem;
+    box-shadow: inset 0 0 0.4rem 0.5rem rgba(0,0,0,.1);
+    padding: 2rem;
+    width: 49%;
+    background-color: #fff;
+}
+
+.botao-rodape{
+    background-color: #1a77a4;
+    border-bottom-color: #0c374d;
+    border-right-color: #0c374d;
+}
+
+.botao-rodape:hover{
+    background-image: none;
+    background-color: #1a80a7;
+    border-bottom-color: #1a80a7;
+    border-right-color: #1a80a7;
 }
