@@ -228,14 +228,14 @@ nav ul {
 .iframe-video {
   aspect-ratio: 16/9;
   border-radius: 2.5rem;
-  flex: 5; /*define como um item flexível aumentará ou diminuirá para caber no espaço disponível em seu contêiner flexível*/
+  flex: 5; /*define como um item flexível aumentará ou diminuirá para caber no espaço disponível em seu container flexível*/
 }
 
 .hero-coluna {
   display: flex;
   flex-flow: column;
   gap: 2rem;
-  flex: 6; /* define como um item flexível aumentará ou diminuirá para caber no espaço disponível em seu contêiner flexível.*/
+  flex: 6; /* define como um item flexível aumentará ou diminuirá para caber no espaço disponível em seu container flexível.*/
 }
 
 .hero-botoes {
