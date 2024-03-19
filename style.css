@@ -246,79 +246,14 @@ nav ul {
 
 /* SEÇÃO CONTEÚDOS GRATUITOS */
 
-.secao-conteudo {
-  background-image: url(https://www.hashtagtreinamentos.com/wp-content/uploads/2022/06/BACKGROUN-banner-02.png);
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+/* h2.gratuito-h2{
+    font-size: 35px;
+    font-weight: 400;      GLOBAL
+    text-align: left;
+    
+} */
 
-.container-conteudos {
-  display: flex;
-  align-items: center;
-}
-
-.img-conteudos {
-  max-width: 47.8rem;
-  flex: 45;
-  position: relative;
-  left: 2rem;
-  z-index: 1;
-}
-
-.conteudos-coluna {
-  display: flex;
-  flex-flow: column;
-  gap: 3.9rem;
-  flex: 55;
-}
-
-.caixas-cursos-hastag {
-  display: flex;
-  gap: 2.5rem;
-}
-
-.caixa-cursos-hastag {
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  gap: 1.6rem;
-  position: relative;
-  box-shadow: inset 0 0 0.8rem 0.1rem rgba(0, 0, 0, 0.1);
-  border-radius: 2rem;
-  padding: 2rem;
-}
-
-.caixa-gratuito-h3 {
-  background-image: linear-gradient(90deg, #aa56a6, #6d42b9);
-}
-
-.conteudos-titulo {
-  display: flex;
-  align-items: center;
-  gap: 1.6rem;
-}
-
-.conteudos-caixa-logo {
-  display: flex;
-  gap: 0.65rem;
-}
-
-.circulo-logo-curos {
-  display: inline-block;
-  background-color: #e7e7e7;
-  border-radius: 50%;
-  box-shadow: inset 0 0 0.4rem 0.2rem rgba(0, 0, 0, 0.1);
-  padding: 1.02rem;
-  width: 4.5rem;
-  height: 4.5rem;
-}
-
-.circulo-logo-curos img {
-  width: 100%;
-}
-
-.gratuito-realce {
+span.gratuito-realce {
   font-weight: 600;
   color: #7a40be;
 }
@@ -327,39 +262,9 @@ nav ul {
   font-weight: 700;
 }
 
-.conteudos-lista-redessociais {
-  display: flex;
-  flex-flow: column;
-  gap: 0.65rem;
-}
-
-.gratuito-link-lista li {
-  display: flex;
-  align-items: center;
-  gap: 0.65rem;
-}
-
-.gratuito-link-lista:link,
-.gratuito-link-lista:visited {
-  display: inline-block;
-  /* align-items: center; */
-  padding: 0.42rem 3.12rem;
-  background-color: #e7e7e7;
-  border-radius: 2.5rem;
-  box-shadow: inset 0 0 0.4rem 0.2rem rgba(0, 0, 0, 0.1);
-  font-size: 1.92rem;
-  line-height: 1.3;
+a.gratuito-link-lista {
+  font-size: 19px;
   text-decoration: none;
-  color: inherit;
-}
-
-.gratuito-link-lista:hover,
-.gratuito-link-lista:active {
-  text-decoration: underline;
-}
-
-.gratuito-link-lista img {
-  width: 1.8rem;
 }
 
 /* SEÇÃO DIFERENCIAIS */
