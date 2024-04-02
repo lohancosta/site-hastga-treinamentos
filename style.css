@@ -76,7 +76,7 @@ input::placeholder {
 }
 
 .secao {
-  padding: 7.63rem 2rem;
+  padding: 6.1rem 2rem;
 }
 
 .container {
@@ -498,21 +498,41 @@ nav ul {
   background-size: cover;
 }
 
+.container-oquefalam {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 3.12rem;
+}
+
 .oquefalam-titulo {
+  display: flex;
+  gap: 1.6rem;
+  align-items: center;
   color: white;
 }
 
 .oquefalam-carrossel {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
   position: relative;
+  align-self: stretch;
+  gap: 2rem;
+}
+.oquefalam-carrossel-imagens {
+  display: flex;
+  align-self: stretch;
+  gap: 2rem;
 }
 
 .oquefalam-carrossel-img {
+  flex: 1;
   position: relative;
   display: inline-block;
   background-position: 50%;
   background-size: cover;
   aspect-ratio: 16/9;
-  width: 33%;
   border-radius: 2.5rem;
   background-color: #7489af;
   background-blend-mode: multiply;
