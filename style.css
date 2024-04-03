@@ -782,6 +782,31 @@ nav ul {
   color: white;
 }
 
+.container-minicurso {
+  display: flex;
+  flex-flow: column;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.form-minicurso {
+  align-self: stretch;
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+  align-items: end;
+}
+
+.form div {
+  display: flex;
+  flex-flow: column;
+  gap: 0.82rem;
+}
+
+.form div label {
+  margin-left: 0.8rem;
+}
+
 .botao-minicurso {
   background-color: #ffba29;
   border-bottom-color: #664a10;
