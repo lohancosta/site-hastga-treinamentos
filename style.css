@@ -706,6 +706,26 @@ nav ul {
   padding: 7.63rem 2rem;
 }
 
+.container-comoajudar-2,
+.container-comoajudar {
+  width: 86rem;
+}
+
+.container-comoajudar,
+.container-comoajudar-2 {
+  display: flex;
+  flex-flow: column;
+}
+
+.container-comoajudar-2 {
+  gap: 1.6rem;
+}
+
+.container-comoajudar {
+  align-items: center;
+  gap: 3.12rem;
+}
+
 .caixa-comoajudar-h2 {
   display: inline-block;
   padding: 0.42rem 1.6rem;
@@ -716,6 +736,9 @@ nav ul {
 }
 
 .como-ajudar-lista {
+  display: flex;
+  flex-flow: column;
+  gap: 1.28rem;
   border-radius: 2.5rem;
   box-shadow: inset 0 0 0.8rem 0.5rem rgba(0, 0, 0, 0.1);
   padding: 2.5rem;
@@ -735,6 +758,21 @@ nav ul {
 .como-ajudar-paragrafo a:hover,
 .como-ajudar-paragrafo a:active {
   color: #0056b3;
+}
+
+.como-ajudar-lista li {
+  display: flex;
+  align-items: start;
+  gap: 0.82rem;
+}
+
+.como-ajudar-lista li img {
+  position: relative;
+  transform: translateY(40%);
+}
+
+.como-ajudar-paragrafo b {
+  font-weight: 600;
 }
 
 /* SEÇÃO MINICURSO */
