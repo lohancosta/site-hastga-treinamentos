@@ -75,6 +75,22 @@ input::placeholder {
   color: #757575;
 }
 
+.flex {
+  display: flex;
+
+  &.wrap {
+    flex-flow: row wrap;
+  }
+
+  &.col {
+    flex-flow: column;
+
+    &.wrap {
+      flex-flow: column wrap;
+    }
+  }
+}
+
 .secao {
   padding: 6.1rem 2rem;
 }
@@ -950,4 +966,89 @@ nav ul {
 
 .logo-whatsapp img {
   width: 100%; /* largura máxima vai ser a largura do container de cima, no caso 8.5rem*/
+}
+
+/* Popup */
+
+.popUpAberto {
+  & .popUp {
+    display: flex;
+  }
+}
+
+.popUp {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(15px); /* aplicando desfoque atrás*/
+  z-index: 9999;
+
+  & .container {
+    position: relative;
+    width: 50rem;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+    border-radius: 2.5rem;
+    border: 3px solid white;
+
+    & .imagem {
+      & img {
+        width: 100%;
+      }
+    }
+
+    & .restante {
+      padding: 2.5rem;
+      gap: 2.5rem;
+
+      & .textos {
+        gap: 1.6rem;
+        text-align: justify;
+      }
+
+      & .botao {
+        &:link,
+        &:visited {
+          text-decoration: none;
+          background-color: #ffb920;
+          border: 0px solid white;
+          border-right-width: 3px;
+          border-bottom-width: 3px;
+        }
+
+        &:hover,
+        &:active {
+          border-width: 1.5px;
+        }
+      }
+    }
+
+    & .fechar {
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      right: 1rem;
+      top: 1rem;
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 50%;
+      color: black;
+      border: 0px solid #303030;
+      font-weight: 700;
+      font-size: 1.5rem;
+
+      &:hover {
+        border-width: 1px;
+      }
+    }
+  }
 }
